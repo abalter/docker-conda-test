@@ -1,0 +1,2 @@
+docker build --build-arg DOCKER_USER=${DOCKER_USER} --build-arg DOCKER_USER_PASSWORD=${DOCKER_USER_PASSWORD} -t conda-test .
+docker run -v v:v -it conda-test bash
