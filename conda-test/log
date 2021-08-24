@@ -1,0 +1,14 @@
+/data/envtest.sh: line 5: conda: command not found
+/data/envtest.sh: line 6: conda: command not found
+# which python
+# which R
+### python -V
+/data/envtest.sh: line 14: python: command not found
+### conda activate p27
+/data/envtest.sh: line 17: conda: command not found
+### which python
+### python -V
+/data/envtest.sh: line 21: python: command not found
+### conda deactivate
+/data/envtest.sh: line 24: conda: command not found
+### which python

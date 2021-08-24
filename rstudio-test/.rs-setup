@@ -1,0 +1,15 @@
+#!/bin/bash
+
+username=balter
+#username=rstudio
+password=tspw4rssoagvm
+
+#adduser --gecos "" --disabled-password $username
+chpasswd <<<"$username:$password"
+usermod -a -G sudo $username
+
+
+echo "rsession-which-r=/data/conda/bin/R" > /etc/rstudio/rserver.conf
+service rstudio-server restart
+
+date &>> rs_setup_log
